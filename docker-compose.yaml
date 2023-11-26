@@ -2,11 +2,11 @@ version: '3.8'
 
 services:
   db:
-    image: mysql:8.0
-    container_name: my-web-service_db_1
+    image: mysql:latest
+    container_name: mysql-container
     environment:
       MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: my_web_service_db
+      MYSQL_DATABASE: api
       MYSQL_USER: dockeruser
       MYSQL_PASSWORD: docker
     ports:
@@ -15,7 +15,7 @@ services:
   web:
     build:
       context: .
-    container_name: my-web-service_web_1
+    container_name: web-container
     depends_on:
       - db
     ports:
