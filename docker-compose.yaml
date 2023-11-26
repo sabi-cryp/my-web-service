@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: my-web-service_db_1
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: my_web_service_db
+      MYSQL_USER: dockeruser
+      MYSQL_PASSWORD: docker
+    ports:
+      - "3306:3306"
+
+  web:
+    build:
+      context: .
+    container_name: my-web-service_web_1
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
