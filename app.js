@@ -6,6 +6,9 @@ const mysql = require('mysql2');
 const app = express();
 const port = 30003;
 
+// Add middleware to parse JSON data
+app.use(express.json());
+
 // Set up MySQL connection
 const connection = mysql.createConnection({
   host: '192.168.80.2', // Docker container name
