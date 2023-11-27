@@ -19,4 +19,4 @@ services:
     depends_on:
       - db
     ports:
-      - "3000:3000"
+      - "30003:30003"
