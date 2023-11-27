@@ -8,7 +8,7 @@ const port = 30001;
 
 // Set up MySQL connection
 const connection = mysql.createConnection({
-  host: '172.17.0.2', // Docker container name
+  host: '192.168.80.2', // Docker container name
   user: 'dockeruser',
   password: 'docker',
   database: 'api',
