@@ -36,6 +36,19 @@ app.get('/get_clients', (req, res) => {
   res.json(clients);
 });
 
+// Define a route to create a new client
+app.post('/create_client', (req, res) => {
+  const { name, email } = req.body;
+
+  // Perform validation on the data if needed
+
+  // Add the new client to the array
+  const newClient = { id: clients.length + 1, name, email };
+  clients.push(newClient);
+
+  res.json({ message: 'Client created successfully', newClient });
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
