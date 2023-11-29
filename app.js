@@ -29,9 +29,9 @@ connection.connect((err) => {
 
 // Array of client data
 const clients = [
-  { id: 1, name: 'Sabrina', email: 'sabrina@example.com' },
-  { id: 2, name: 'Aymen', email: 'aymen@example.com' },
-  { id: 3, name: 'Mehdi', email: 'mehdi@example.com' },
+  { id: 1, name: 'sabrina', email: 'sabrina@example.com' },
+  { id: 2, name: 'aymen', email: 'aymen@example.com' },
+  { id: 3, name: 'mehdi', email: 'mehdi@example.com' },
 ];
 
 // Define a route to get clients
