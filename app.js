@@ -28,8 +28,8 @@ connection.connect((err) => {
 });
 
 // Array of client data
-//const clients = [
- // { id: 1, name: 'demo', email: 'demo@example.com' },
+const clients = [
+  { id: 1, name: 'demo', email: 'demo@example.com' },
   //{ id: 2, name: 'aymen', email: 'aymen@example.com' },
  // { id: 3, name: 'mehdi', email: 'mehdi@example.com' },
 //];
