@@ -32,7 +32,7 @@ const clients = [
   { id: 1, name: 'demo', email: 'demo@example.com' },
   //{ id: 2, name: 'aymen', email: 'aymen@example.com' },
  // { id: 3, name: 'mehdi', email: 'mehdi@example.com' },
-//];
+];
 
 // Define a route to get clients
 app.get('/get_clients', (req, res) => {
